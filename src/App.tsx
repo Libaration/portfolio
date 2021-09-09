@@ -1,12 +1,16 @@
 import React from 'react';
 import './App.css';
 import About from './components/About';
+// @ts-ignore
+import Tada from 'react-reveal/Tada';
 
 function App() {
   return (
     <div className="App">
       <div className="header">
-        <h3>Hello, I'm Cristian Deleon</h3>
+        <Tada>
+          <h3>Hello, I'm Cristian Deleon</h3>
+        </Tada>
       </div>
       <div className="custom-shape-divider-bottom-1631174196">
         <svg
