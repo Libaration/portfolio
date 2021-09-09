@@ -40,11 +40,64 @@ h1 {
   font-size: 1.6em;
 }
 
+.header {
+  overflow: hidden;
+  background: white;
+  height: 18em;
+  text-align: center;
+}
+.header h3 {
+  margin-top: 1.5em;
+  font-size: 3em;
+  color: #7f5af0;
+}
+.header img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
 @media screen and (min-width: 620px) {
+  body {
+    font-size: 16px;
+  }
 }
 
 @media screen and (min-width: 960px) {
+  body {
+    font-size: 28px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
+  body {
+    font-size: 38px;
+  }
 }
+
+/* Shape Divider */
+.custom-shape-divider-bottom-1631174196 {
+  z-index: 2;
+  position: relative;
+  margin-top: -114px;
+  bottom: 0em;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1631174196 svg {
+  z-index: 2;
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 115px;
+}
+
+.custom-shape-divider-bottom-1631174196 .shape-fill {
+  z-index: 2;
+  fill: var(--background);
+}
+/* Shape Divider */
