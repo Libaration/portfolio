@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import About from './components/About';
+import Pixi from './components/Pixi';
 // @ts-ignore
 import Tada from 'react-reveal/Tada';
 
@@ -8,9 +9,10 @@ function App() {
   return (
     <div className="App">
       <div className="header">
-        <Tada>
+        <Pixi />
+        {/* <Tada>
           <h3>Hello, I'm Cristian Deleon</h3>
-        </Tada>
+        </Tada> */}
       </div>
       <div className="custom-shape-divider-bottom-1631174196">
         <svg

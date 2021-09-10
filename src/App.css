@@ -23,6 +23,21 @@
   font-weight: 600;
 }
 
+/*Resetting*/
+body,
+p,
+a,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+/*Resetting*/
+
 body {
   margin: 0;
   padding: 0;
@@ -40,6 +55,19 @@ h1 {
   font-size: 1.6em;
 }
 
+li {
+  color: var(--main);
+}
+
+.about ul,
+h1 {
+  text-align: center;
+}
+.about ul {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
 .header {
   overflow: hidden;
   background: white;
@@ -54,6 +82,11 @@ h1 {
 .header img {
   object-fit: cover;
   height: 100%;
+  width: 100%;
+}
+.header canvas {
+  object-fit: cover;
+  min-height: 300px;
   width: 100%;
 }
 
