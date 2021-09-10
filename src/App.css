@@ -1,8 +1,7 @@
 :root {
-  --background: #16161a;
-  --button: #7f5af0;
-  --main: #fffffe;
-  --paragraph: #94a1b2;
+  --background: #fffffe;
+  --button: #6246ea;
+  --paragraph: #2b2c34;
 }
 
 @font-face {
@@ -34,7 +33,7 @@ li {
   text-decoration: none;
 }
 li {
-  list-style-type: none;
+  /* list-style-type: none; */
 }
 /*Resetting*/
 
@@ -45,39 +44,64 @@ body {
   background-color: var(--background);
   font-family: 'Carino Sans';
   font-weight: normal;
+  color: var(--paragraph);
 }
 p {
   color: var(--paragraph);
 }
 h1 {
-  color: var(--main);
   font-weight: bold;
   font-size: 1.6em;
 }
 
 li {
-  color: var(--main);
 }
 
-.about ul,
-h1 {
+/* about */
+.about h1 {
   text-align: center;
 }
 .about ul {
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-weight: 600;
+  flex: 1;
 }
+
+.about .code {
+  font-size: 3em;
+  flex: 1;
+  text-align: center;
+
+  height: 3em;
+}
+.code {
+  object-fit: contain;
+}
+
+.about {
+}
+
+.about .skills {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+/* about */
+
+/* header */
 
 .header {
   overflow: hidden;
-  background: white;
-  height: 18em;
+  height: 10em;
   text-align: center;
+  position: relative;
 }
 .header h3 {
-  margin-top: 1.5em;
-  font-size: 3em;
-  color: #7f5af0;
+  font-size: 2em;
+  color: white;
+  position: absolute;
+  filter: drop-shadow(0 0 30px #333);
+  width: 100%;
 }
 .header img {
   object-fit: cover;
@@ -86,9 +110,11 @@ h1 {
 }
 .header canvas {
   object-fit: cover;
-  min-height: 300px;
+  min-height: 310px;
   width: 100%;
 }
+
+/* header */
 
 @media screen and (min-width: 620px) {
   body {

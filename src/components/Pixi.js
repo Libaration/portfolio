@@ -1,9 +1,8 @@
-import React, { useRef, useEffect, useState } from 'react';
+import React, { useRef, useEffect } from 'react';
 import * as PIXI from 'pixi.js';
 
 export default function Pixi() {
   const ref = useRef(null);
-  const [position, setPosition] = useState({ x: 0, y: 0 });
   useEffect(() => {
     let app = new PIXI.Application({
       width: 1000,
@@ -11,8 +10,10 @@ export default function Pixi() {
     });
     ref.current.appendChild(app.view);
     let img = new PIXI.Sprite.from(`${process.env.PUBLIC_URL}/header.jpg`);
-    img.width = 1000;
+
     img.height = 667;
+    img.x = 0;
+    img.y = -240;
     app.stage.addChild(img);
     let depthMap = new PIXI.Sprite.from(
       `${process.env.PUBLIC_URL}/depthmap.jpg`
@@ -21,8 +22,8 @@ export default function Pixi() {
     let displacementFilter = new PIXI.filters.DisplacementFilter(depthMap);
     app.stage.filters = [displacementFilter];
     window.onmousemove = function (e) {
-      displacementFilter.scale.x = (window.innerWidth / 2 - e.clientX) / 20;
-      displacementFilter.scale.y = (window.innerHeight / 2 - e.clientY) / 20;
+      displacementFilter.scale.x = (window.innerWidth / 2 - e.clientX) / 40;
+      displacementFilter.scale.y = (window.innerHeight / 2 - e.clientY) / 40;
     };
     return () => {
       // On unload completely destroy the application and all of it's children
