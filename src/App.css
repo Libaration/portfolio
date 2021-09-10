@@ -40,6 +40,7 @@ li {
 body {
   margin: 0;
   padding: 0;
+  height: 100vh;
   overflow-x: hidden;
   background-color: var(--background);
   font-family: 'Carino Sans';
@@ -64,14 +65,13 @@ li {
 .about ul {
   font-size: 1.2em;
   font-weight: 600;
-  flex: 1;
+  flex: 1 1 auto;
 }
 
 .about .code {
   font-size: 3em;
-  flex: 1;
+  flex: 1 1 auto;
   text-align: center;
-
   height: 3em;
 }
 .code {
@@ -79,6 +79,7 @@ li {
 }
 
 .about {
+  height: 17em;
 }
 
 .about .skills {
@@ -86,13 +87,39 @@ li {
   flex-wrap: wrap;
   align-items: center;
 }
+
+.scroll {
+  flex: 1;
+  text-align: right;
+}
+.scroll img {
+  height: 2em;
+}
+
+.navBar {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1em;
+}
+.navBar ul {
+  list-style: none;
+}
+.navBar li {
+  display: inline-block;
+}
+.nav {
+  flex: 1;
+  font-size: 0.5em;
+}
 /* about */
 
 /* header */
 
 .header {
   overflow: hidden;
-  height: 10em;
+  height: 8em;
   text-align: center;
   position: relative;
 }
@@ -113,8 +140,14 @@ li {
   min-height: 310px;
   width: 100%;
 }
-
 /* header */
+
+/*Projects*/
+.projects {
+  background-color: red;
+  height: 100vh;
+}
+/*Projects*/
 
 @media screen and (min-width: 620px) {
   body {
@@ -138,7 +171,7 @@ li {
 .custom-shape-divider-bottom-1631174196 {
   z-index: 2;
   position: relative;
-  margin-top: -114px;
+  margin-top: -50px;
   bottom: 0em;
   left: 0;
   width: 100%;
@@ -152,7 +185,7 @@ li {
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
-  height: 115px;
+  height: 50px;
 }
 
 .custom-shape-divider-bottom-1631174196 .shape-fill {

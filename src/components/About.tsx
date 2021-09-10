@@ -1,7 +1,10 @@
 import React from 'react';
 import code from '../assets/images/code.png';
+import scroll from '../assets/images/scroll.png';
 // @ts-ignore
 import Fade from 'react-reveal/Fade';
+// @ts-ignore
+import Bounce from 'react-reveal/Bounce';
 
 const About = () => {
   return (
@@ -21,6 +24,20 @@ const About = () => {
             <li>Rails</li>
           </ul>
         </Fade>
+      </div>
+      <div className="navBar">
+        <div className="nav">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Projects</li>
+          </ul>
+        </div>
+        <Bounce bottom>
+          <div className="scroll">
+            <img src={scroll} alt="scroll down icon" />
+          </div>
+        </Bounce>
       </div>
     </section>
   );
