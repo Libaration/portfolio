@@ -202,7 +202,7 @@ li {
 /*Projects*/
 
 .projects {
-  height: 100vh;
+  height: auto;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -220,6 +220,14 @@ li {
   width: 25em;
   overflow-x: hidden;
   align-self: center;
+  padding-bottom: 1.5em;
+}
+.sliderDescription {
+  padding-top: 5px;
+  font-size: 0.5em;
+}
+.sliderDescription li::before {
+  content: '✅ ';
 }
 
 /*Projects*/
@@ -278,7 +286,7 @@ li {
 /*Shape Divider Details -> Projects*/
 .custom-shape-divider-bottom-1631349158 {
   position: relative;
-  bottom: 0;
+  bottom: -0.1em;
   left: 0;
   width: 100%;
   overflow: hidden;

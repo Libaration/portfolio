@@ -24,8 +24,8 @@ const Details = forwardRef<HTMLDivElement, Props>((props, ref) => {
             <br />I recently attended Flatiron and completed the Full Stack
             developer program where my attention switched from Desktop to Web
             and am enjoying it just as much as desktop development! I love
-            problem solving and creating projects to really gain a deeper
-            understanding in whatever I create.
+            problem solving and creating projects to gain a deeper understanding
+            in whatever I create.
           </p>
         </div>
       </div>
