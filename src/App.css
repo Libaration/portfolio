@@ -123,6 +123,7 @@ li {
 .navBar li {
   padding-left: 2em;
   display: inline-block;
+  cursor: pointer;
 }
 .nav {
   flex: 1;
