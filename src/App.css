@@ -47,6 +47,9 @@ body {
   font-weight: normal;
   color: var(--paragraph);
 }
+html {
+  scroll-behavior: smooth;
+}
 p {
   color: var(--paragraph);
 }
@@ -107,6 +110,7 @@ li {
   list-style: none;
 }
 .navBar li {
+  padding-left: 2em;
   display: inline-block;
 }
 .nav {
@@ -143,7 +147,7 @@ li {
 /* header */
 
 /*Projects*/
-.projects {
+.details {
   background-color: red;
   height: 100vh;
 }
