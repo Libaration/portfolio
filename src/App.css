@@ -146,12 +146,18 @@ li {
 }
 /* header */
 
-/*Projects*/
+/*Details*/
 .details {
   background-color: red;
   height: 100vh;
+  display: flex;
 }
-/*Projects*/
+.habboClient iframe {
+  border: none;
+  width: 20em;
+  height: 20em;
+}
+/*Details*/
 
 @media screen and (min-width: 620px) {
   body {

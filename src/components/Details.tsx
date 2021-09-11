@@ -1,10 +1,12 @@
 import React, { forwardRef } from 'react';
+import Habbo from '../components/Habbo';
 
 interface Props {}
 
 const Details = forwardRef<HTMLDivElement, Props>((props, ref) => {
   return (
     <div className="details" ref={ref}>
+      <Habbo />
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Laoreet id donec
       ultrices tincidunt arcu non. Pharetra massa massa ultricies mi quis
