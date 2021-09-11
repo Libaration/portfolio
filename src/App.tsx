@@ -3,6 +3,7 @@ import './App.css';
 import Landing from './components/Landing';
 import Details from './components/Details';
 import NavBar from './components/NavBar';
+import Projects from './components/Projects';
 // @ts-ignore
 import Fade from 'react-reveal/Fade';
 
@@ -16,6 +17,9 @@ function App() {
       </Landing>
       <Fade left>
         <Details ref={details} />
+      </Fade>
+      <Fade right>
+        <Projects />
       </Fade>
     </div>
   );

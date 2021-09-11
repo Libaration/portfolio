@@ -1,5 +1,6 @@
 import React from 'react';
-
+//@ts-ignore
+import Pulse from 'react-reveal/Pulse';
 interface Props {}
 
 const Habbo = (props: Props) => {
@@ -13,7 +14,9 @@ const Habbo = (props: Props) => {
           scrolling="no"
         />
       </div>
-      <div className="notice">^^^ I'm functional!</div>
+      <Pulse>
+        <div className="notice">^^^ I'm functional!</div>
+      </Pulse>
       <div className="projectDescription">
         <b>Project:</b> HabboHTML5
         <br />
