@@ -13,6 +13,7 @@ const Habbo = (props: Props) => {
           scrolling="no"
         />
       </div>
+      <div className="notice">^^^ I'm functional!</div>
       <div className="projectDescription">
         <b>Project:</b> HabboHTML5
         <br />

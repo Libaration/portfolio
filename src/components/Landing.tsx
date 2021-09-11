@@ -16,7 +16,7 @@ const Landing = forwardRef<HTMLDivElement, IProps>((props, ref) => {
       <div className="header" ref={ref}>
         <h3>Hello, I'm Cristian Deleon</h3>
 
-        {/* <Pixi /> */}
+        <Pixi />
       </div>
       <div className="custom-shape-divider-bottom-1631174196">
         <svg
