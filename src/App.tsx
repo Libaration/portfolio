@@ -10,17 +10,18 @@ import Fade from 'react-reveal/Fade';
 function App() {
   const details = React.createRef<HTMLDivElement>();
   const landing = React.createRef<HTMLDivElement>();
+  const projects = React.createRef<HTMLDivElement>();
+  console.log(landing);
+  console.log(projects);
   return (
     <div className="App">
       <Landing ref={landing}>
-        <NavBar landing={landing} details={details} />
+        <NavBar landing={landing} details={details} projects={projects} />
       </Landing>
       <Fade left>
         <Details ref={details} />
       </Fade>
-      <Fade right>
-        <Projects />
-      </Fade>
+      <Projects ref={projects} />
     </div>
   );
 }

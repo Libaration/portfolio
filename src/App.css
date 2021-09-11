@@ -2,6 +2,8 @@
   --background: #fffffe;
   --button: #6246ea;
   --paragraph: #2b2c34;
+  --secondary: #16161a;
+  --secondaryfont: #7f5af0;
 }
 
 @font-face {
@@ -105,6 +107,7 @@ li {
 .scroll {
   flex: 1;
   text-align: right;
+  margin-left: -250px;
 }
 .scroll img {
   height: 2em;
@@ -119,11 +122,13 @@ li {
 }
 .navBar ul {
   list-style: none;
+  padding-left: 20px;
 }
 .navBar li {
   padding-left: 2em;
   display: inline-block;
   cursor: pointer;
+  text-decoration: underline;
 }
 .nav {
   flex: 1;
@@ -164,6 +169,7 @@ li {
   display: flex;
   overflow: hidden;
   flex-direction: row;
+  z-index: 7;
 }
 .clientIframe {
   border: 0;
@@ -193,6 +199,31 @@ li {
 }
 /*Details*/
 
+/*Projects*/
+
+.projects {
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  background-color: var(--secondary);
+  color: var(--secondaryfont);
+}
+.projects p {
+  color: #fffffe;
+}
+.projects img {
+  width: 9em;
+}
+.slider {
+  width: 25em;
+  overflow-x: hidden;
+  align-self: center;
+}
+
+/*Projects*/
+
 @media screen and (min-width: 620px) {
   body {
     font-size: 16px;
@@ -203,6 +234,12 @@ li {
   body {
     font-size: 28px;
   }
+  .projects img {
+    width: 18em;
+  }
+  .slider {
+    width: 41em;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -211,7 +248,7 @@ li {
   }
 }
 
-/* Shape Divider */
+/* Shape Divider Landing */
 .custom-shape-divider-bottom-1631174196 {
   z-index: 2;
   position: relative;
@@ -236,4 +273,30 @@ li {
   z-index: 2;
   fill: var(--background);
 }
-/* Shape Divider */
+/* Shape Divider Landing */
+
+/*Shape Divider Details -> Projects*/
+.custom-shape-divider-bottom-1631349158 {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+  z-index: -1;
+}
+
+.custom-shape-divider-bottom-1631349158 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+  z-index: -1;
+}
+
+.custom-shape-divider-bottom-1631349158 .shape-fill {
+  fill: var(--secondary);
+  z-index: -1;
+}
+/*Shape Divider Details -> Projects*/
