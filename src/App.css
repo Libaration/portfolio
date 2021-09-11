@@ -170,16 +170,19 @@ li {
 }
 
 .projectDescription {
-  font-size: 0.5em;
+  font-size: 0.8em;
   margin-top: auto;
+  padding-left: 5px;
+  padding-bottom: 5px;
 }
 .project {
   display: flex;
   flex-direction: column;
 }
 .detailsParagraph {
-  font-size: 0.7em;
+  font-size: 0.9em;
   padding-left: 10px;
+  padding-right: 5px;
 }
 /*Details*/
 
