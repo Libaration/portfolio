@@ -32,10 +32,20 @@ li {
   padding: 0;
   text-decoration: none;
 }
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
 li {
   /* list-style-type: none; */
 }
 /*Resetting*/
+a {
+  text-decoration: underline;
+}
 
 body {
   margin: 0;
@@ -52,6 +62,7 @@ html {
 }
 p {
   color: var(--paragraph);
+  font-weight: normal;
 }
 h1 {
   font-weight: bold;
@@ -148,14 +159,27 @@ li {
 
 /*Details*/
 .details {
-  background-color: red;
   height: 100vh;
   display: flex;
+  overflow: hidden;
 }
-.habboClient iframe {
-  border: none;
-  width: 20em;
-  height: 20em;
+.clientIframe {
+  border: 0;
+  width: 15em;
+  height: 16em;
+}
+
+.projectDescription {
+  font-size: 0.5em;
+  margin-top: auto;
+}
+.project {
+  display: flex;
+  flex-direction: column;
+}
+.detailsParagraph {
+  font-size: 0.7em;
+  padding-left: 10px;
 }
 /*Details*/
 
