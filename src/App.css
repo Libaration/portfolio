@@ -165,7 +165,7 @@ li {
 
 /*Details*/
 .details {
-  height: 100vh;
+  height: auto;
   display: flex;
   overflow: hidden;
   flex-direction: row;
